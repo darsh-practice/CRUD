@@ -83,4 +83,4 @@ node_modules/
 
 # Specific files and directories
 **/secrets.json**
-**/config/database.js** 
+**/config/db.js** 
