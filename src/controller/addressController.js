@@ -15,7 +15,7 @@ const getAddress = async (req, res) => {
 
     const addresses = await findAddressByUserId(id);
 
-    if (addresses.length === 0) {
+    if (!addresses) {
       return sendResponse(res, 404, "Addresses not found for the user");
     }
     return sendResponse(res, 200, "Address found", addresses);
